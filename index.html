@@ -397,11 +397,14 @@
                     <p class="title-subsc">Підпишіться на розсилку</p>
                     <div class="box-subsc">
                         <input class="input-subsc" type="email" name="email" id="" placeholder="E-mail">
-                        <button type="button" class="button-subsc">Підписатися</button>
+                        <button type="button" class="button-subsc">
+                            <p class="button-subsc-title">Підписатися</p>
+                            <svg class="button-subsc-svg">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>                        
+                        </button>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </footer>
@@ -414,40 +417,49 @@
             </svg>
         </buttom>
 
-        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <form class="">
+        <form class="modal-form">
+            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+
             <div class="form-group">
-                <label class="modal-label" for="user-name">Ім'я</label>
-                <input class="modal-input" type="text" name="name" id="user-name">
-                <svg class="icon-form" width="18px" height="18px">
-                    <use href="./images/icons.svg#icon-person"></use>
-                </svg>
+                <label class="modal-label">
+                    Ім'я
+                    <input class="modal-input" type="text" name="" id="user-name">
+                    <svg class="icon-form" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                </label>
             </div>
             <div class="form-group">
-                <label class="modal-label" for="user-phone">Телефон</label>
-                <input class="modal-input" type="tel" name="user-phone" id="user-phone">
-                <svg class="icon-form" width="18px" height="18px">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-
+                <label class="modal-label">
+                    Телефон
+                    <input class="modal-input" type="tel" name="" id="user-phone">
+                    <svg class="icon-form" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </label>
             </div>
             <div class="form-group">
-                <label class="modal-label" for="user-mail">Пошта</label>
-                <input class="modal-input" type="email" name="email" id="user-email">
-                <svg class="icon-form" width="18px" height="18px">
-                    <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-
+                <label class="modal-label">
+                    Пошта
+                    <input class="modal-input" type="email" name="" id="user-email">
+                    <svg class="icon-form" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </label>
             </div>
             <div class="form-box">
-                <label class="modal-label" for="user-comment">Коментар</label>
-                <textarea class="modal-textarea" name="comment" id="user-comment" placeholder="Введіть текст"></textarea>
+                <label class="modal-label">
+                    Коментар
+                    <textarea class="modal-textarea" name="" id="user-comment" placeholder="Введіть текст"></textarea>
+                </label>
             </div>
 
             <div class="form-checked">                
                 <label class="checked-label">
                     <input class="checked-input" type="checkbox" name="" id="user-checked">
-                    <span class="cheked-icon"></span>
+                    <svg class="svg-check">
+                        <use href="./images/icons.svg#icon-chek"></use>
+                    </svg>        
                     Погоджуюся з розсилкою та приймаю
                 </label>
                 <a class="modal-licens" href="#" >&nbsp;Умови договору</a>
